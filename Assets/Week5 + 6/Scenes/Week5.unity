@@ -415,7 +415,6 @@ GameObject:
   - component: {fileID: 699112816}
   - component: {fileID: 699112815}
   - component: {fileID: 699112814}
-  - component: {fileID: 699112813}
   - component: {fileID: 699112818}
   m_Layer: 0
   m_Name: Cube
@@ -424,21 +423,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &699112813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699112812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fe2e30ae86b7ab4b95edbe8140dc1be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myEase: 1
-  xMove: 1
-  duration: 3
 --- !u!65 &699112814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1003,7 +987,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 699112813}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CustomLerp, Assembly-CSharp
         m_MethodName: LerpButton
         m_Mode: 1
