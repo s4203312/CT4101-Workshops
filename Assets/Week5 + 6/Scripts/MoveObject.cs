@@ -17,7 +17,7 @@ public class MoveObject : MonoBehaviour
     private IEnumerator Lerp(){
         float time = 0f;
         while(time < 1f){
-            t = EasesClass.Quadratic.InOut(time);
+            t = EasesClass.Powers.Quadratic.InOut(time);
             time += Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
